@@ -1,0 +1,71 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body {
+  font-size: larger;
+  background-color: black;
+  z-index: -1;
+  height: 100vh;
+  width: 99%;
+}
+header {
+  color: white;
+  backdrop-filter: blur(100px);
+  z-index: 1;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  font-size: 1.1rem;
+}
+.navbar {
+  margin-left: 0;
+  padding-left: 0%;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+hr {
+  position: 0;
+  margin-bottom: 0;
+  width: 98%;
+  color: white;
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 1.8vh;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+a:link {
+  text-decoration: none;
+  color: azure;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+.contact{
+    padding-right: 13px;
+}
