@@ -16,7 +16,7 @@ body {
 header {
   color: white;
   backdrop-filter: blur(100px);
-  z-index: 1;
+  z-index: 2;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -26,6 +26,7 @@ header {
   font-size: 1.1rem;
   margin: 0;
   padding-right: 0;
+  user-select: none;
 }
 .navbar {
   margin-left: 0;
@@ -83,6 +84,7 @@ a:hover {
   grid-template-columns: auto;
   position: static;
   padding-top: 1rem;
+  user-select: none;
 }
 
 .card1 {
@@ -109,7 +111,6 @@ a:hover {
 .card3 {
   background-image: url("../images/Galery/project_3.jpg");
   border: 0.2rem solid rgb(255, 255, 255);
-  
   background-size: cover;
   height: 40vh;
   width: 90vw;
@@ -125,6 +126,11 @@ img {
   aspect-ratio: 4/3;
   border-radius: 2.5rem;
 }
+.title{
+  margin-left: 1rem;
+}
+
+
 h1 {
   width: 100%;
   z-index: 0;
@@ -141,11 +147,56 @@ h1 {
   backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
-
+  user-select: none;
 }
 h1:hover{
   font-size: 2rem;
   height: 6rem;
   color: red;
   transition-timing-function: ease-in-out;
+}
+h2{
+  font-weight: bold;
+  color: white;
+  font-size:3rem;
+  user-select: none;
+
+}
+
+h3{
+  color: white;
+  text-align: center;
+}
+p{
+  color: white;
+  text-align: center;
+}
+input{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+form{
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.footer{
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  user-select: none;
+}
+.social{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly ;
+
+  padding: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
