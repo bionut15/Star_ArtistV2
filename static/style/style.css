@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Hind+Madurai:wght@300&family=Montserrat:wght@700&display=swap");
 html {
   margin: 0;
   padding: 0;
@@ -12,6 +13,11 @@ body {
   width: 100%;
   margin: 0;
   padding-right: 0;
+  display:flexbox;
+  align-items: center;
+  flex-direction: row;
+  justify-items: center;
+  gap: 2vh;
 }
 header {
   color: white;
@@ -37,10 +43,12 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-weight: bold;
 }
 
 hr {
   margin-bottom: 0;
+  margin-top: 0;
   width: 98%;
   color: white;
 }
@@ -62,6 +70,10 @@ li {
   padding-right: 13px;
 }
 
+a {
+  font-family: "Hind Madurai", sans-serif;
+  text-align: center;
+}
 a:link {
   text-decoration: none;
   color: white;
@@ -96,7 +108,7 @@ a:hover {
   width: 90vw;
   border-radius: 2.5rem;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 .card2 {
   background-image: url("../images/Galery/project_2.jpg");
@@ -106,7 +118,7 @@ a:hover {
   width: 90vw;
   border-radius: 2.5rem;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 .card3 {
   background-image: url("../images/Galery/project_3.jpg");
@@ -116,7 +128,7 @@ a:hover {
   width: 90vw;
   border-radius: 2.5rem;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 img {
   width: 100%;
@@ -126,12 +138,16 @@ img {
   aspect-ratio: 4/3;
   border-radius: 2.5rem;
 }
-.title{
+.title {
   margin-left: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
-
-
+.answer {
+  font-family: "Montserrat", sans-serif;
+  align-items: flex-end;
+}
 h1 {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   z-index: 0;
   text-align: left;
@@ -149,54 +165,109 @@ h1 {
   align-items: center;
   user-select: none;
 }
-h1:hover{
+h1:hover {
   font-size: 2rem;
   height: 6rem;
   color: red;
   transition-timing-function: ease-in-out;
 }
-h2{
+h2 {
   font-weight: bold;
   color: white;
-  font-size:3rem;
+  font-size: 3rem;
   user-select: none;
-
+  font-family: "Hind Madurai", sans-serif;
 }
 
-h3{
+h3 {
   color: white;
   text-align: center;
+  font-family: "Hind Madurai", sans-serif;
 }
-p{
+p {
   color: white;
   text-align: center;
+  margin: 2vh;
+  margin-bottom: 0;
 }
-input{
+input {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
-form{
-  display: grid;
-  flex-direction: row;
+form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: center;
   gap: 1rem;
+  vertical-align: middle;
 }
 
-.footer{
+.footer {
   display: grid;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   user-select: none;
 }
-.social{
+.social {
   display: flex;
-  flex-direction:row;
-  justify-content:space-evenly ;
-
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 0;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+input {
+  background-color: rgb(214, 214, 214);
+  color: black;
+  font-size: 1rem;
+}
+.email_imput {
+  height: 3.2vh;
+  width: 40vw;
+  border-radius: 2rem;
+  border: 0ch;
+  padding-left: 3vw;
+  font-family: "Hind Madurai", sans-serif;
+}
+textarea {
+  height: 10vh;
+  width: 60vw;
+  border-radius: 1rem;
+  border: 0ch;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  font-family: "Hind Madurai", sans-serif;
+  background-color: rgb(214, 214, 214);
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+.send_b {
+  color: black;
+  background-color: rgb(235, 42, 42);
+  height: 4vh;
+  width: 15vw;
+  border-radius: 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 0;
+  margin-bottom: 1vh;
+}
+.vertical {
+  transform: rotate(90deg);
+  width: 12vh;
+  height: 0;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  display: block;
+  z-index: 0;
+}
+.decoration {
+  display: flex;
+  flex-direction: column;
+  flex: content;
 }
