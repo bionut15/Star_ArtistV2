@@ -144,7 +144,9 @@ img {
 }
 .answer {
   font-family: "Montserrat", sans-serif;
-  align-items: flex-end;
+  display: flex;
+ text-align: end;
+ padding-right: 2vw;
 }
 h1 {
   font-family: "Montserrat", sans-serif;
