@@ -13,7 +13,7 @@ body {
   width: 100%;
   margin: 0;
   padding-right: 0;
-  display:flexbox;
+  display: flexbox;
   align-items: center;
   flex-direction: row;
   justify-items: center;
@@ -145,8 +145,8 @@ img {
 .answer {
   font-family: "Montserrat", sans-serif;
   display: flex;
- text-align: end;
- padding-right: 2vw;
+  text-align: end;
+  padding-right: 2vw;
 }
 h1 {
   font-family: "Montserrat", sans-serif;
