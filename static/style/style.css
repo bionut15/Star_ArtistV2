@@ -23,13 +23,14 @@ header {
   color: white;
   backdrop-filter: blur(100px);
   z-index: 2;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: sticky;
+  position: fixed;
   top: 0;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-style: bold;
   margin: 0;
   padding-right: 0;
   user-select: none;
@@ -37,22 +38,25 @@ header {
 .navbar {
   margin-left: 0;
   padding-left: 0%;
+  margin-bottom: 0;
   display: flex;
   flex-direction: row;
-  height: 10vh;
+  height: 8vh;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   font-weight: bold;
 }
-
+.intro {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+}
 hr {
   margin-bottom: 0;
   margin-top: 0;
   width: 98%;
   color: white;
 }
-
 .ul {
   display: flex;
   flex-direction: row;
@@ -69,7 +73,6 @@ li {
   padding-left: 13px;
   padding-right: 13px;
 }
-
 a {
   font-family: "Hind Madurai", sans-serif;
   text-align: center;
@@ -98,7 +101,6 @@ a:hover {
   padding-top: 1rem;
   user-select: none;
 }
-
 .card1 {
   background-image: url("../images/Galery/project_1.jpg");
   border: 0.2rem solid rgb(255, 255, 255);
@@ -138,7 +140,7 @@ img {
   aspect-ratio: 4/3;
   border-radius: 2.5rem;
 }
-#icon{
+#icon {
   margin-top: 1vh;
   aspect-ratio: 2/2;
   height: 10rem;
@@ -189,19 +191,18 @@ h2 {
   user-select: none;
   font-family: "Hind Madurai", sans-serif;
 }
-
 h3 {
   color: white;
   text-align: center;
   font-family: "Hind Madurai", sans-serif;
-  font-kerning:normal;
+  font-kerning: normal;
 }
-h4{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   color: white;
   text-align: center;
-  
 }
 p {
   color: white;
@@ -223,8 +224,6 @@ form {
   gap: 1rem;
   vertical-align: middle;
 }
-
-
 .footer {
   display: grid;
   flex-direction: row;
@@ -279,10 +278,10 @@ textarea {
 }
 .vertical {
   transform: rotate(90deg);
-  width: 12vh;
+  width: 16vh;
   height: 0;
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-top: 9vh;
+  margin-bottom: 9vh;
   display: block;
   z-index: 0;
 }
@@ -290,4 +289,46 @@ textarea {
   display: flex;
   flex-direction: column;
   flex: content;
+}
+@media only screen and (min-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-wrap: wrap;
+  }
+  .card1 {
+    width: 20vw;
+  }
+  .card2 {
+    width: 20vw;
+  }
+  .card3 {
+    width: 20vw;
+  }
+  #button_more {
+    padding-top: 10vh;
+    font-size: 1.5rem;
+  }
+  .break {
+    flex-basis: 100%;
+  }
+  .insta {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  form {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  textarea {
+    width: 30vw;
+    height: 15vh;
+  }
+  .email_imput {
+    width: 19vw;
+    padding-left: 1vw;
+  }
 }

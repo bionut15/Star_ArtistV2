@@ -26,8 +26,10 @@
     <hr />
   </header>
   <body>
-    <h2 class="title">Cauti o echipa profesionista de incredere?</h2>
-    <h2 class="answer">Suntem mereu aici, pentru  tine</h2>
+    <div class="intro">
+      <h2 class="title">Cauti o echipa profesionista de incredere?</h2>
+      <h2 class="answer">Suntem mereu aici, pentru tine</h2>
+    </div>
     <hr />
     <hr class="vertical" />
     <hr />
@@ -41,7 +43,8 @@
       <div class="card3">
         <h1>Project 3</h1>
       </div>
-      <a href="../templates/pages/gallery.html">Mai multe proiecte</a>
+      <div class="break"></div>
+      <a href="../templates/pages/gallery.html" id="button_more">Mai multe proiecte</a>
     </div>
     <div class="decoration">
       <hr />
@@ -49,15 +52,16 @@
       <hr />
     </div>
     <div class="horizontal">
-      <p>Da-ne un mesaj aici</p>
-      <div class="Insta">
-        <img src="../static/images/Svg/Square.svg" alt="" id="icon">
-        <h4>@star_artist_dej</h4>
+      <div class="insta">
+        <p>Da-ne un mesaj aici</p>
+        <div >
+          <img src="../static/images/Svg/Square.svg" alt="" id="icon" />
+          <h4>@star_artist_dej</h4>
+        </div>
       </div>
-      <hr>
-    </div>
-
-    <form type="text" action="">
+      <hr />
+      </div>
+    <form type="text" action="" class="form">
       <p>Trimite-ne un email</p>
       <input type="email" class="email_imput" placeholder="Email" />
       <textarea
