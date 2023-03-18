@@ -292,7 +292,7 @@ textarea {
 }
 @media only screen and (min-width: 1200px) {
   .intro{
-     padding-top: 52;
+     padding-top: 22;
     padding-bottom: 42vh;
   }
   .cards {
